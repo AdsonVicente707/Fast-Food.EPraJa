@@ -18,9 +18,11 @@ body {
      margin: 0; 
      padding: 0;
      background-image: linear-gradient(to bottom, #961f0ab7,#a12813, #8a2d2171,rgba(245, 80, 80, 0));
-     
+    
+    
      }
 header { 
+
     background-image: linear-gradient(to top, #641507, #a8200e,rgba(255, 9, 9, 0.637)); 
     color: white; 
     text-align: center; 
@@ -39,7 +41,7 @@ header {
     box-shadow: 4px 4px 10px #0000005e;
      }
 .burg { 
-    min-width: 50px;
+    min-width: 30px;
     min-height: 50px;
     max-width: 300px; 
     max-height: 300px; 
@@ -49,7 +51,7 @@ header {
    
      }
 .batata {
-    min-width: 50px;
+    min-width: 30px;
     min-height: 50px;
     max-width: 300px; 
     max-height: 300px;  
@@ -61,7 +63,7 @@ header {
     
      }
 .refri { 
-    min-width: 50px;
+    min-width: 30px;
     min-height: 50px;
     max-width: 300px; 
     max-height: 300px; 
@@ -72,7 +74,7 @@ header {
     
      }  
 .coca { 
-    min-width: 50px;
+    min-width: 30px;
     min-height: 50px;
     max-width: 300px; 
     max-height: 300px; 
@@ -83,7 +85,7 @@ header {
     
      }
 .sorvete { 
-    min-width: 50px;
+    min-width: 30px;
     min-height: 50px;
     max-width: 300px; 
     max-height: 300px; 
