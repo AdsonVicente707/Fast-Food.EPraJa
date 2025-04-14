@@ -168,7 +168,14 @@ main { display: flex;
         padding: 1rem;
     }
 
-    .iconep, .quemimg {
+    .iconep {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .quemimg {
         width: 80px;
         height: 80px;
     }
