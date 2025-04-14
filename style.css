@@ -147,6 +147,42 @@ main { display: flex;
         width: calc(100% - 1.4rem); 
     }
 }
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    header {
+        font-size: 0.9em;
+        padding: 0.5rem;
+    }
+
+    nav a {
+        font-size: 1em;
+        margin: 5px;
+    }
+
+    .produto {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .iconep, .quemimg {
+        width: 80px;
+        height: 80px;
+    }
+
+    .nome, .subt, .subt2 {
+        font-size: 1em;
+    }
+
+    input[type="number"] {
+        width: 25px;
+        height: 25px;
+    }
+
+    .botao, .produto button {
+        font-size: 0.9em;
+        padding: 0.4rem;
+    }
+}
 .nome2 { 
     font-size: 1em; 
     font-weight: italic; 
