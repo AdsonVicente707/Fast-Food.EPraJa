@@ -148,6 +148,10 @@ main { display: flex;
     }
 }
 /* Responsive design for smaller screens */
+.produto img {
+    display: block;
+    margin: 0 auto;
+}
 @media (max-width: 480px) {
     header {
         font-size: 0.9em;
