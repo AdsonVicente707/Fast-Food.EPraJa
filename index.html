@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>É PARA JÁ FastFood</title>
+  <link rel="shortcut icon" href="icones/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body id="topo">
+  <header>
+    <nav>
+      <a href="#topo">Home</a>
+      <a href="pgNovidades.html" target="_self">Novidades</a>
+      <a href="Quem.somos.html" target="_self">Quem somos</a>
+      <a href="#carrinho">Carrinho</a>
+    </nav>
+    
+    <h1><img src="imagens/dee59bfb-b2dd-40e7-8f64-757a3b187d7d.png" alt="" class="iconep" ></h1>
+    <p class="subt">Aqui você encontra seu lanche favorito!</p>
+    <p class="subt2">é só ligar ou chamar no whatts (81 9 5555-5555)</p>
+  </header>
+
+  <main id="menu">
+    <!-- PRODUTOS -->
+    <div class="produto">
+      <h3><img src="imagens/burger-6.png" alt="" class="burg"></h3>
+      <p class="nome">Burguer Top</p>
+      <p class="nome2">humburger artesanal, bacon, salada, molho especial, cheddar, picles, cebola caramelizada</p>
+      <p class="nome">R$15,00</p>
+      <input type="number" min="1" value="1" id="qtd-BurguerTop">
+      <button onclick="adicionar('BurguerTop', 15, 'qtd-BurguerTop')">Adicionar</button>
+    </div>
+
+    <div class="produto">
+      <h3><img src="imagens/humb3.png" alt="" class="burg"></h3>
+      <p class="nome">Smash Burguer</p>
+      <p class="nome2">humburger prensado, bacon, salada e cheddar</p>
+     
+      <p class="nome">R$10,00</p>
+      <input type="number" min="1" value="1" id="qtd-SmashBurguer">
+      <button onclick="adicionar('SmashBurguer', 10, 'qtd-SmashBurguer')">Adicionar</button>
+    </div>
+
+    <div class="produto">
+      <h3><img src="imagens/humb.2.png" alt="" class="burg"></h3>
+      <p class="nome">Burguer Salad</p>
+      <p class="nome2">humburger artesanal, salada, cheddar</p>
+      <p class="nome">R$12,00</p>
+      <input type="number" min="1" value="1" id="qtd-Burguersalad">
+      <button onclick="adicionar('Burguersalad', 12, 'qtd-Burguersalad')">Adicionar</button>
+    </div>
+
+    <!-- BATATAS -->
+    <div class="produto">
+      <h3><img src="imagens/137-1374271_batata-frita-e-onion-rings.png" alt="" class="batata"></h3>
+      <p class="nome">Batata Top</p>
+      <p class="nome2">batata, bolinho de bacalhau e cebola empanada</p>
+      <p class="nome">R$10,00</p>
+      <input type="number" min="1" value="1" id="qtd-batataTop">
+      <button onclick="adicionar('BatataTop', 10, 'qtd-batataTop')">Adicionar</button>
+    </div>
+
+    <div class="produto">
+      <h3><img src="imagens/batatabacon.png" alt="" class="batata"></h3>
+      <p class="nome">Batata Salad</p>
+      <p class="nome2">batata, cheiro verde, bacon e cheddar</p>
+      <p class="nome">R$9,00</p>
+      <input type="number" min="1" value="1" id="qtd-batataSalad">
+      <button onclick="adicionar('BatataSalad', 9, 'qtd-batataSalad')">Adicionar</button>
+    </div>
+
+    <div class="produto">
+      <h3><img src="imagens/batata3.png" alt="" class="batata"></h3>
+      <p class="nome">Batata Big Smash</p>
+      <p class="nome2">300g de batata com 3 molhos</p>
+      <p class="nome">R$8,00</p>
+      <input type="number" min="1" value="1" id="qtd-batataBigSmash">
+      <button onclick="adicionar('BatataBigSmash', 8, 'qtd-batataBigSmash')">Adicionar</button>
+    </div>
+
+    <!-- BEBIDAS -->
+    <div class="produto">
+      <h3><img src="imagens/refrigerante.png" alt="" class="refri"></h3>
+      <p class="nome">Combo de Refri x3</p>
+      <p class="nome2">3 refrigerantes de 350ml (um de cada)</p>
+      <p class="nome">R$10,00</p>
+      <input type="number" min="1" value="1" id="qtd-refri">
+      <button onclick="adicionar('Refrigerante', 10, 'qtd-refri')">Adicionar</button>
+    </div>
+
+    <div class="produto">
+      <h3><img src="imagens/refri.coca.png" alt="" class="coca"></h3>
+      <p class="nome">Coca-Cola</p>
+      <p class="nome2">lata 350ml</p>
+      <p class="nome">R$5,00</p>
+      <input type="number" min="1" value="1" id="qtd-cocacola">
+      <button onclick="adicionar('Coca-Cola', 5, 'qtd-cocacola')">Adicionar</button>
+    </div>
+
+    <div class="produto">
+      <h3><img src="imagens/refri.fanta.png" alt="" class="refri"></h3>
+      <p class="nome">Fanta Laranja</p>
+      <p class="nome2">lata 350ml</p>
+      <p class="nome">R$5,00</p>
+      <input type="number" min="1" value="1" id="qtd-fantaLaranja">
+      <button onclick="adicionar('Fanta Laranja', 5, 'qtd-fantaLaranja')">Adicionar</button>
+    </div>
+
+    <!-- SOBREMESA -->
+    <div class="produto">
+      <h3><img src="imagens/sorvete.png" alt="" class="sorvete"></h3>
+      <p class="nome">Sorvete</p>
+      <p class="nome">R$7,00</p>
+      <input type="number" min="1" value="1" id="qtd-sorvete">
+      <button onclick="adicionar('Sorvete', 7, 'qtd-sorvete')">Adicionar</button>
+    </div>
+  </main>
+
+  <!-- CARRINHO -->
+  <section class="carrinho" id="carrinho">
+    <h2>Carrinho de Compras</h2>
+    <div id="itens"></div>
+    <p><strong>Total:</strong> R$<span id="total">0</span>,00</p>
+    <button onclick="limparCarrinho()">Limpar Carrinho</button>
+  </section>
+
+  <!-- PAGAMENTO -->
+  <section class="pagamento">
+    <h2>Nome do Cliente</h2>
+    <input type="text" id="nome" placeholder="Digite seu nome completo" />
+
+    <h2>Endereço de Entrega</h2>
+    <input type="text" id="endereco" placeholder="Digite seu endereço completo" />
+
+    <h2>Forma de Pagamento</h2>
+    <select id="pagamento">
+      <option value="Cartão de Crédito">Cartão de Crédito</option>
+      <option value="Cartão de Débito">Cartão de Débito</option>
+      <option value="Pix">Pix</option>
+    </select>
+
+    <button onclick="finalizarPedido()" class="botao">Finalizar Pedido</button>
+    <button onclick="cancelarPedido()" class="botao">Cancelar Pedido</button>
+
+    <div id="confirmacao" style="margin-top: 1rem; font-weight: bold;"></div>
+    <div id="btn-pagamento" style="display:none; margin-top: 1rem;">
+      <button onclick="irParaPagamento()" class="botao">Ir para Pagamento</button>
+    </div>
+  </section>
+
+  <script>
+    let carrinho = [];
+
+    function adicionar(produto, preco, inputId) {
+      const qtd = parseInt(document.getElementById(inputId).value);
+      if (qtd > 0) {
+        carrinho.push({ produto, preco, qtd });
+        atualizarCarrinho();
+      }
+    }
+
+    function remover(index) {
+      carrinho.splice(index, 1);
+      atualizarCarrinho();
+    }
+
+    function limparCarrinho() {
+      carrinho = [];
+      atualizarCarrinho();
+    }
+
+    function atualizarCarrinho() {
+      const itensDiv = document.getElementById('itens');
+      const totalSpan = document.getElementById('total');
+      itensDiv.innerHTML = '';
+      let total = 0;
+
+      carrinho.forEach((item, index) => {
+        const subtotal = item.preco * item.qtd;
+        total += subtotal;
+        itensDiv.innerHTML += `<div class="item-carrinho">${item.qtd}x ${item.produto} - R$${subtotal},00 <span class="remover" onclick="remover(${index})">[remover]</span></div>`;
+      });
+
+      totalSpan.textContent = total;
+    }
+
+    function finalizarPedido() {
+      const nome = document.getElementById('nome').value;
+      const endereco = document.getElementById('endereco').value;
+      const pagamento = document.getElementById('pagamento').value;
+      const total = document.getElementById('total').textContent;
+      const confirmacao = document.getElementById('confirmacao');
+
+      if (!nome || !endereco || carrinho.length === 0) {
+        alert("Por favor, preencha todos os campos e adicione itens ao carrinho.");
+        return;
+      }
+
+      confirmacao.innerHTML = `Pedido confirmado para <strong>${nome}</strong>!<br>Endereço: ${endereco}<br>Pagamento: ${pagamento}<br>Total: R$${total},00`;
+      document.getElementById('btn-pagamento').style.display = 'block';
+      limparCarrinho();
+      document.getElementById('nome').value = '';
+      document.getElementById('endereco').value = '';
+      document.getElementById('pagamento').selectedIndex = 0;
+    }
+
+    function cancelarPedido() {
+      limparCarrinho();
+      document.getElementById('nome').value = '';
+      document.getElementById('endereco').value = '';
+      document.getElementById('pagamento').selectedIndex = 0;
+      document.getElementById('confirmacao').innerHTML = 'Pedido cancelado.';
+      document.getElementById('btn-pagamento').style.display = 'none';
+    }
+
+    function irParaPagamento() {
+      alert("Redirecionando para a tela de pagamento...");
+      // window.location.href = 'pagamento.html';
+    }
+  </script>
+</body>
+</html>
